@@ -80,24 +80,24 @@ def parse(inputan,index,output,hitungBuka,error):
                 isNum = False
                 break
         if isNum :
-            output += "num "
+            output += 'num '
         else:
-            output += "error "
+            output += 'error '
             error = True
         index = count
     else :
         if(inputan[count] in operator):
-            output += "opr "
+            output += 'opr '
         elif(inputan[count] is '('):
-            output += "kurbuka "
+            output += 'kurbuka '
             hitungBuka = hitungBuka + 1
         elif(inputan[count] is ')'):
-            output += "kurtutup "
+            output += 'kurtutup '
             hitungBuka = hitungBuka - 1
         elif(inputan[count].isdigit()):
-            output += "num "
+            output += 'num '
         else:
-            output += "error "
+            output += 'error '
             error = True
         index = index + 1
 
