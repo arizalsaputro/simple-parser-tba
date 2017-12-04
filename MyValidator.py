@@ -33,7 +33,6 @@ def check(token, index, valid):
         elif token[index+2] == 'kurbuka':
             if token[index] == 'num' and token[index+1] == 'opr':
                 valid = True
-            pass
         else:
             valid = False
     elif index + 1 < len(token):
